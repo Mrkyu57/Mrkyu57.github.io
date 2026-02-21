@@ -2,38 +2,37 @@
 layout: default
 ---
 
-{% assign all_posts = site.posts %}
-{% assign categories = site.categories | sort %}
+<div class="row">
+  <div class="col-12">
+    <h1 class="dynamic-title">과목별 저장소</h1>
+    <p class="text-muted">학습하고 정리한 내용을 과목별로 모아두었습니다.</p>
+  </div>
 
-<div id="post-list" class="flex-grow-1 px-xl-1">
-  {% for category in categories %}
-    {% assign category_name = category[0] %}
-    {% assign posts = category[1] %}
-    
-    <h2 class="category-title" style="margin-top: 2rem; border-bottom: 2px solid var(--main-border-color); padding-bottom: 0.5rem;">
-      <i class="far fa-folder-open fa-fw"></i> {{ category_name }} 
-      <span class="text-muted small">({{ posts | size }})</span>
-    </h2>
-
-    {% for post in posts %}
-      <article class="card-wrapper card">
-        <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
-          <div class="col-md-12">
-            <div class="card-body d-flex flex-column">
-              <h1 class="card-title my-2 mt-md-0">{{ post.title }}</h1>
-              <div class="card-text content mt-0 mb-3">
-                <p>{{ post.excerpt | strip_html | truncate: 200 }}</p>
-              </div>
-              <div class="post-meta flex-grow-1 d-flex align-items-end">
-                <div class="me-auto">
-                  <i class="far fa-calendar fa-fw me-1"></i>
-                  {{ post.date | date: "%Y-%m-%d" }}
-                </div>
-              </div>
+  <div id="post-list" class="flex-grow-1 px-xl-1 mt-4">
+    <div class="row g-4">
+      {% assign categories = site.categories | sort %}
+      {% for category in categories %}
+        {% assign category_name = category[0] %}
+        {% assign posts_count = category[1] | size %}
+        
+        <div class="col-12 col-sm-6 col-lg-4">
+          <a href="{{ '/categories/' | relative_url }}{{ category_name | slugify }}/" class="card h-100 category-card text-decoration-none" style="transition: transform 0.3s; border: 1px solid var(--main-border-color);">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center py-5">
+              <i class="far fa-folder-open fa-3x mb-3 text-primary"></i>
+              <h3 class="card-title h4 mb-2" style="color: var(--heading-color);">{{ category_name }}</h3>
+              <p class="card-text text-muted">{{ posts_count }}개의 포스트</p>
             </div>
-          </div>
-        </a>
-      </article>
-    {% endfor %}
-  {% endfor %}
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
+
+<style>
+  .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    background-color: var(--card-bg);
+  }
+</style>
