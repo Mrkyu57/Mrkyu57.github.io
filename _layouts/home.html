@@ -2,88 +2,67 @@
 layout: default
 ---
 
-<div id="custom-home-wrapper">
-  <div class="row">
-    <div class="col-12 text-center my-5">
-      <h1 class="dynamic-title" style="font-weight: 800; letter-spacing: -1px;">Learning Archive</h1>
-      <p class="text-muted">전공 분야별로 정리된 지식 창고입니다.</p>
-    </div>
+<div class="row">
+  <div class="col-12 text-center my-5">
+    <h1 class="dynamic-title" style="font-weight: 800;">Learning Archive</h1>
+    <p class="text-muted">카테고리를 선택하여 학습 내용을 확인하세요.</p>
+  </div>
 
-    <div class="col-12">
-      <div class="row g-4 justify-content-center">
-        {% comment %} 
-          모든 포스트를 뒤져서 '가장 첫 번째' 카테고리만 대분류로 수집합니다.
-        {% endcomment %}
-        {% assign raw_categories = "" | split: "" %}
-        {% for post in site.posts %}
-          {% if post.categories.size > 0 %}
-            {% assign raw_categories = raw_categories | push: post.categories[0] %}
-          {% endif %}
-        {% endfor %}
-        {% assign top_categories = raw_categories | uniq | sort %}
+  <div class="col-12">
+    <div class="row g-4 justify-content-center">
+      {% comment %} 대분류 추출 로직 {% endcomment %}
+      {% assign top_categories = "" | split: "" %}
+      {% for post in site.posts %}
+        {% if post.categories.size > 0 %}
+          {% assign top_categories = top_categories | push: post.categories[0] %}
+        {% endif %}
+      {% endfor %}
+      {% assign top_categories = top_categories | uniq | sort %}
 
-        {% for category_name in top_categories %}
-          {% assign posts_count = site.categories[category_name] | size %}
-          
-          <div class="col-6 col-md-4 col-lg-3">
-            <a href="{{ '/categories/' | relative_url }}{{ category_name | slugify }}/" class="card h-100 main-category-box text-decoration-none">
-              <div class="card-body d-flex flex-column align-items-center justify-content-center text-center">
-                <div class="icon-circle mb-3">
-                  <i class="fas fa-layer-group fa-2x text-primary"></i>
-                </div>
-                <h3 class="card-title h5 mb-2" style="color: var(--heading-color); font-weight: 700;">{{ category_name }}</h3>
-                <span class="badge rounded-pill bg-light text-dark border">{{ posts_count }} Articles</span>
+      {% for category_name in top_categories %}
+        {% assign posts_count = site.categories[category_name] | size %}
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="{{ '/categories/' | relative_url }}{{ category_name | slugify }}/" class="card h-100 main-box text-decoration-none">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center text-center">
+              <div class="icon-circle mb-3">
+                <i class="fas fa-code fa-2x text-primary"></i>
               </div>
-            </a>
-          </div>
-        {% endfor %}
-      </div>
+              <h3 class="card-title h5 mb-2" style="color: var(--heading-color); font-weight: 700;">{{ category_name | upcase }}</h3>
+              <span class="badge rounded-pill bg-light text-dark border">{{ posts_count }} Articles</span>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>
 
 <style>
-  /* 1. 홈 화면 본문을 감싸는 article 태그의 기본 흰색 박스 디자인 제거 */
-  #core-wrapper > article {
+  /* 화면 전체를 가리던 article 박스 완전 무력화 */
+  #core-wrapper > article, .post, .page {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
     padding: 0 !important;
   }
+  
+  #post-list, .pagination { display: none !important; }
 
-  /* 2. Chirpy 기본 포스트 목록 기능 강제 숨기기 */
-  #post-list, .pagination {
-    display: none !important;
-  }
-
-  /* 3. 박스 디자인 스타일 */
-  .main-category-box {
+  .main-box {
     aspect-ratio: 1 / 1;
     border: 1px solid var(--main-border-color);
     background-color: var(--card-bg) !important;
     border-radius: 20px;
-    transition: all 0.3s ease;
-    display: flex !important; /* 강제 노출 */
+    transition: 0.3s;
   }
-
-  .main-category-box:hover {
+  .main-box:hover {
     transform: translateY(-8px);
     border-color: var(--link-color);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   }
-
   .icon-circle {
-    width: 60px;
-    height: 60px;
+    width: 60px; height: 60px;
     background: var(--main-border-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; align-items: center; justify-content: center;
     border-radius: 50%;
-  }
-
-  /* 반응형 텍스트 크기 조절 */
-  @media (max-width: 576px) {
-    .card-title { font-size: 0.9rem; }
   }
 </style>
