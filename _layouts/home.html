@@ -8,11 +8,8 @@ layout: default
     <p class="text-muted">전공 분야별로 정리된 지식 창고입니다.</p>
   </div>
 
-  <div id="post-list" class="flex-grow-1 px-xl-1">
-    <div class="row g-4">
-      {% comment %} 
-        포스트의 가장 첫 번째(상위) 카테고리만 중복 없이 수집
-      {% endcomment %}
+  <div class="col-12">
+    <div class="row g-4 justify-content-center">
       {% assign top_categories = "" | split: "" %}
       {% for post in site.posts %}
         {% if post.categories.size > 0 %}
@@ -41,45 +38,41 @@ layout: default
 </div>
 
 <style>
-  /* 박스 디자인 스타일 */
+  /* 1. 제목 아래에 생기는 기본 흰색 테두리 박스(article) 제거 */
+  #core-wrapper > article {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  /* 2. Chirpy 기본 포스트 목록 기능 완전히 숨기기 */
+  #post-list, .pagination {
+    display: none !important;
+  }
+
+  /* 3. 우리가 만든 카테고리 박스 디자인 */
   .main-category-box {
-    aspect-ratio: 1 / 1; /* 정사각형 유지 */
+    aspect-ratio: 1 / 1;
     border: 1px solid var(--main-border-color);
-    background-color: var(--card-bg);
+    background-color: var(--card-bg); /* 테마 모드(다크/라이트)에 맞는 배경색 */
     border-radius: 20px;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    transition: all 0.3s ease;
   }
 
   .main-category-box:hover {
     transform: translateY(-8px);
     border-color: var(--link-color);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   }
 
   .icon-circle {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background: var(--main-border-color);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition: background 0.3s;
-  }
-
-  .main-category-box:hover .icon-circle {
-    background: var(--link-color);
-  }
-
-  .main-category-box:hover .icon-circle i {
-    color: white !important;
-  }
-
-  /* 반응형 폰트 조절 */
-  @media (max-width: 576px) {
-    .card-title { font-size: 0.9rem; }
-    .icon-circle { width: 50px; height: 50px; }
-    .icon-circle i { font-size: 1.2rem; }
   }
 </style>
