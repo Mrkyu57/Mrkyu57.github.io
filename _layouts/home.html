@@ -3,24 +3,40 @@ layout: default
 ---
 
 <div class="row">
-  <div class="col-12">
-    <h1 class="dynamic-title">과목별 저장소</h1>
-    <p class="text-muted">학습하고 정리한 내용을 과목별로 모아두었습니다.</p>
+  <div class="col-12 text-center my-5">
+    <h1 class="dynamic-title" style="font-weight: 800; font-size: 2.5rem;">Knowledge Base</h1>
+    <p class="text-muted">관심 분야를 선택하여 세부 내용을 확인하세요.</p>
   </div>
 
-  <div id="post-list" class="flex-grow-1 px-xl-1 mt-4">
+  <div id="post-list" class="flex-grow-1 px-xl-1">
     <div class="row g-4">
-      {% assign categories = site.categories | sort %}
-      {% for category in categories %}
-        {% assign category_name = category[0] %}
-        {% assign posts_count = category[1] | size %}
+      {% comment %} 
+        포스트들을 돌면서 '첫 번째' 카테고리 명칭만 중복 없이 수집합니다.
+      {% endcomment %}
+      {% assign top_categories = "" | split: "" %}
+      {% for post in site.posts %}
+        {% if post.categories.size > 0 %}
+          {% assign top_categories = top_categories | push: post.categories[0] %}
+        {% endif %}
+      {% endfor %}
+      {% assign top_categories = top_categories | uniq | sort %}
+
+      {% for category_name in top_categories %}
+        {% assign posts_count = site.categories[category_name] | size %}
         
-        <div class="col-12 col-sm-6 col-lg-4">
-          <a href="{{ '/categories/' | relative_url }}{{ category_name | slugify }}/" class="card h-100 category-card text-decoration-none" style="transition: transform 0.3s; border: 1px solid var(--main-border-color);">
-            <div class="card-body d-flex flex-column align-items-center justify-content-center py-5">
-              <i class="far fa-folder-open fa-3x mb-3 text-primary"></i>
-              <h3 class="card-title h4 mb-2" style="color: var(--heading-color);">{{ category_name }}</h3>
-              <p class="card-text text-muted">{{ posts_count }}개의 포스트</p>
+        <div class="col-12 col-md-6">
+          <a href="{{ '/categories/' | relative_url }}{{ category_name | slugify }}/" class="card h-100 category-card text-decoration-none">
+            <div class="card-body d-flex align-items-center p-4">
+              <div class="icon-box me-4">
+                <i class="fas fa-book-open fa-2x text-primary"></i>
+              </div>
+              <div>
+                <h3 class="card-title h4 mb-1" style="color: var(--heading-color);">{{ category_name }}</h3>
+                <p class="card-text text-muted small mb-0">{{ posts_count }} Articles</p>
+              </div>
+              <div class="ms-auto">
+                <i class="fas fa-chevron-right text-muted"></i>
+              </div>
             </div>
           </a>
         </div>
@@ -30,9 +46,23 @@ layout: default
 </div>
 
 <style>
-  .category-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  .category-card {
+    transition: all 0.3s ease;
+    border: 1px solid var(--main-border-color);
     background-color: var(--card-bg);
+    border-radius: 12px;
+  }
+  .category-card:hover {
+    transform: translateX(10px);
+    border-color: var(--link-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  .icon-box {
+    background: var(--main-border-color);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 </style>
