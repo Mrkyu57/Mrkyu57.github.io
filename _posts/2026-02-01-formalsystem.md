@@ -1,8 +1,8 @@
 ---
-title: "형식 체계 Formal system"
+title: "[Mathematical logic] 형식 체계(formal system)"
 date: 2026-02-01 19:00:00 +0900
-categories: [math,Mathematical logic]
-tags: [math]
+categories: [math,foundations of mathematics]
+tags: [mathematical logic]
 math: true
 ---
 

@@ -1,9 +1,8 @@
 ---
 title: "[Python] 리스트(list)"
 date: 2026-02-18 21:00:00 +0900
-categories: [programming,python]
-tags: [programming]
-excerpt: " "
+categories: [computer language,programming language]
+tags: [python]
 ---
 
 > phython의 리스트 문법

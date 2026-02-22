@@ -1,8 +1,8 @@
 ---
 title: "[Python] 함수(function)"
 date: 2026-02-19 12:00:00 +0900
-categories: [programming,python]
-tags: [programming]
+categories: [computer language,programming language]
+tags: [python]
 excerpt: " "
 ---
 
