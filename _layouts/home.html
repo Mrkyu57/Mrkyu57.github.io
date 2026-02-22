@@ -9,7 +9,7 @@ layout: default
   </div>
 
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       {% assign raw_categories = "" | split: "" %}
       {% for post in site.posts %}
         {% if post.categories.size > 0 %}
@@ -21,21 +21,20 @@ layout: default
       {% for category_name in top_categories %}
         {% assign posts_count = site.categories[category_name] | size %}
         
-        <div class="col-12 mb-3">
+        <div class="col-12 col-lg-10 mb-4"> 
           <a href="{{ '/categories/' | relative_url }}{{ category_name | slugify }}/" class="category-wide-box text-decoration-none">
-            <div class="d-flex align-items-center justify-content-between px-4 py-4">
+            <div class="d-flex align-items-center justify-content-between px-5 py-5">
               <div class="d-flex align-items-center">
-                <div class="icon-box me-4">
-                  <i class="fas fa-folder-open fa-lg text-primary"></i>
+                <div class="icon-box" style="margin-right: 80px;"> 
+                  <i class="fas fa-folder-open fa-2x text-primary"></i>
                 </div>
                 <div>
                   <h3 class="category-name mb-0">{{ category_name | upcase }}</h3>
-                  <small class="text-muted">Explore all articles about {{ category_name }}</small>
                 </div>
               </div>
               <div class="d-flex align-items-center">
                 <span class="badge count-badge">{{ posts_count }} Articles</span>
-                <i class="fas fa-chevron-right ms-3 text-muted"></i>
+                <i class="fas fa-arrow-right ms-4 text-muted"></i>
               </div>
             </div>
           </a>
@@ -46,7 +45,7 @@ layout: default
 </div>
 
 <style>
-  /* 기본 박스 제거 */
+  /* 기본 레이아웃 정돈 */
   #core-wrapper > article {
     background: transparent !important;
     border: none !important;
@@ -54,49 +53,54 @@ layout: default
     padding: 0 !important;
   }
 
-  /* 가로형 박스 디자인 */
+  /* 세로로 길쭉하고 웅장한 박스 디자인 */
   .category-wide-box {
     display: block;
     background-color: var(--card-bg) !important;
     border: 1px solid var(--main-border-color);
-    border-radius: 16px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 24px; /* 더 둥글게 처리하여 부드러운 느낌 */
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
   .category-wide-box:hover {
-    transform: translateX(10px); /* 오른쪽으로 살짝 이동하는 효과 */
+    transform: translateX(15px);
     border-color: var(--link-color);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
   }
 
   .category-name {
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-size: 1.5rem; /* 글씨 크기 확대 */
+    font-weight: 800;
+    letter-spacing: 1px;
     color: var(--heading-color);
   }
 
   .icon-box {
-    width: 50px;
-    height: 50px;
-    background: var(--main-border-color);
+    width: 70px; /* 아이콘 박스 크기 확대 */
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
+    background: var(--main-border-color);
+    border-radius: 18px;
+    transition: 0.3s;
   }
 
   .count-badge {
-    background-color: var(--main-border-color);
-    color: var(--text-color);
-    padding: 8px 15px;
+    background-color: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--main-border-color);
+    padding: 10px 20px;
     border-radius: 30px;
-    font-weight: 500;
+    font-size: 0.9rem;
+    font-weight: 600;
   }
 
   .category-wide-box:hover .icon-box {
     background: var(--link-color);
+    transform: rotate(-10deg); /* 호버 시 아이콘 살짝 회전 센스 */
   }
-  
+
   .category-wide-box:hover .icon-box i {
     color: white !important;
   }
