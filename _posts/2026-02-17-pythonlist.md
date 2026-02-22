@@ -10,6 +10,7 @@ tags: [python]
 <br>
 
 ## 리스트 - 정의 Definition
+***
 
 <br>
 
@@ -47,6 +48,7 @@ list1 = [1,2,[3,4,[5,6]]]
 
 <br>
 
+***
 > `len` : 리스트의 길이를 나타내는 함수  
 
 ```python
@@ -63,6 +65,7 @@ len(ListName)
 <br>
 <br>
 
+***
 >`max` : 리스트의 최댓값을 구하는 함수  
 
 ```python
@@ -82,6 +85,7 @@ c
 <br>
 <br>
 
+***
 >`min` : 리스트의 최솟값을 구하는 함수  
 
 ```python
@@ -101,6 +105,7 @@ a
 <br>
 <br>
 
+***
 >`sum` : 리스트의 값을 모두 더하는 함수
 
 ```python
@@ -118,6 +123,7 @@ sum(ListName)
 <br>
 <br>
 
+***
 >`sorted` : 정렬한 리스트를 구하는 함수  
 
 ```python
@@ -143,6 +149,7 @@ booltype=`False` : 올림차순
 
 <br>
 
+***
 >`append` : 리스트의 끝에 요소를 추가
 
 ```python
