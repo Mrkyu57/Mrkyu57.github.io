@@ -221,7 +221,5 @@ jekyll-archives:
   enabled: [categories]
   layouts:
     category: category
-    #tag: tag
   permalinks:
-    #tag: /tags/:name/
     category: /categories/:name/
