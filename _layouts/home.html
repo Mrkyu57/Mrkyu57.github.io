@@ -103,4 +103,21 @@ layout: default
   #post-list, .pagination {
     display: none !important;
   }
+  
+  #panel-wrapper {
+    display: none !important;
+  }
+
+
+  #main-wrapper {
+    max-width: 100% !important; /* 전체 너비 사용 */
+    padding-right: 0 !important; /* 오른쪽 여백 제거 */
+  }
+
+  /* 3. 본문 내용이 너무 퍼지지 않게 적절한 너비 유지 (옵션) */
+  #post-list, .post-content {
+    max-width: 900px; 
+    margin-right: auto;
+    margin-left: auto;
+}
 </style>
