@@ -120,4 +120,21 @@ layout: default
     margin-right: auto;
     margin-left: auto;
 }
+
+/* 1. 오른쪽 패널 제거 및 본문 중앙 정렬/확장 */
+  body #panel-wrapper { display: none !important; }
+  body #main-wrapper { max-width: 100% !important; padding-right: 0 !important; }
+  body #main-wrapper > .container { max-width: 1100px !important; margin: 0 auto !important; }
+  body main { width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; }
+
+  /* 2. 포스트 하단 확장 영역(공유, 태그, 카테고리, 작성자, 라이센스) 모두 숨기기 */
+  .share-wrapper,            /* 공유하기 */
+  .post-tags,                /* 태그 */
+  .post-meta.text-muted,     /* 카테고리 및 작성자(By mrkyu) */
+  .post-copyright,           /* 저작권 라이센스 문구 (CC BY 4.0) */
+  .post-tail-bottom,         /* 하단 메타 영역 전체 */
+  .post-tail-wrapper {       /* 하단 전체 감싸는 영역 */
+    display: none !important;
+    border: none !important;
+  }
 </style>
