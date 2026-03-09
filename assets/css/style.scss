@@ -1,22 +1,9 @@
-/* 오른쪽 패널 & 포스트 하단 지저분한 것들 통째로 삭제 */
-#panel-wrapper, 
-.post-tail-wrapper, 
-.post-meta.text-muted, 
-.post-copyright, 
-.post-tags, 
-.share-wrapper {
+/* 1. 오른쪽 '인기 태그'랑 하단 '카테고리/태그/저작권' 싹 다 가리기 */
+#panel-wrapper, .post-tail-wrapper, .post-meta.text-muted, .post-copyright, .post-tags, .share-wrapper {
   display: none !important;
 }
 
-/* 본문 영역 왼쪽 쏠림 방지 및 확장 */
-#main-wrapper {
-  max-width: 100% !important;
-  padding: 0 !important;
-}
-#main-wrapper > .container {
-  max-width: 1100px !important;
-}
-main {
-  flex: 0 0 100% !important;
-  max-width: 100% !important;
-}
+/* 2. 본문만 듬직하게 중앙으로 넓히기 */
+#main-wrapper { max-width: 100% !important; }
+#main-wrapper > .container { max-width: 1100px !important; }
+main { flex: 0 0 100% !important; max-width: 100% !important; }
