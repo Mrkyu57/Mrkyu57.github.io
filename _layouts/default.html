@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<style>
+  /* 1. 모든 페이지 공통: 오른쪽 패널 제거 및 본문 확장 */
+  body #panel-wrapper { display: none !important; }
+  body #main-wrapper { max-width: 100% !important; padding-right: 0 !important; }
+  body #main-wrapper > .container { max-width: 1100px !important; margin: 0 auto !important; }
+  body main { width: 100% !important; max-width: 100% !important; flex: 0 0 100% !important; }
+
+  /* 2. 포스트 페이지 전용: 공유하기, 태그, 작성자, 라이센스 싹 제거 */
+  .share-wrapper, .post-tags, .post-meta.text-muted, 
+  .post-copyright, .post-tail-bottom, .post-tail-wrapper {
+    display: none !important;
+    border: none !important;
+  }
+</style>
+
+{{ content }}
