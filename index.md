@@ -6,7 +6,7 @@ title: "HOME"
 <div class="main_text">   <!--메인메뉴 텍스트-->
 
   <h1>
-    project:MK                                 <!--project:MK-->
+    project:MK</br>                              <!--project:MK-->
     <input class="search_bar" value="⌕" >     <!--검색창-->
   </h1>
 </div>
@@ -46,6 +46,6 @@ title: "HOME"
     
     position: absolute;
     top: 180px;               
-    left: 600px;
+    left: 800px;
     margin: 0;
   }
