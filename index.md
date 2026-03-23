@@ -5,10 +5,8 @@ title: "HOME"
 
 <div class="main_text">   <!--메인메뉴 텍스트-->
 
-  <h1>
-    project:MK</br>                              <!--project:MK-->
-    <input class="search_bar" value="⌕" >     <!--검색창-->
-  </h1>
+  <h1>project:MK</h1>                             
+  <input class="search_bar" value="⌕" >    
 </div>
 
 <div class="menu_block">  <!--선택메뉴-->
