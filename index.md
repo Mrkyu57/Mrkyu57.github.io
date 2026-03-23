@@ -1,14 +1,9 @@
 ---
 layout: default
-title: "첫 페이지"
+title: "HOME"
 ---
-# 다시 시작하는 블로그!
-직접 하나씩 만들어갑니다.
+<h1>project:MK
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
-    </li>
-  {% endfor %}
-</ul>
+<style>
+  h1{text-align: left; margin: 180px 50px;}
+</style>
