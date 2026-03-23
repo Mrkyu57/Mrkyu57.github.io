@@ -16,6 +16,22 @@ permalink: /analysismainpost/
     <h1>실해석학</h1>
 </div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+## chapter 1 : 실수 
+
+## chapter 2 : 극한
+① 실함수의 극한 - Limit of a function <br>
+② 연속함수 - 
+## chapter 3 : 미분
+
+
 
 
 
@@ -60,7 +76,7 @@ permalink: /analysismainpost/
         padding: 10px;
         border-radius: 10px;      
         text-decoration: none;
-        width: 800px;
+        width: 1200px;
         background-color: #5489ce;
         position: absolute;
         top: 400px;               
@@ -70,3 +86,4 @@ permalink: /analysismainpost/
 
 
 </style>
+
