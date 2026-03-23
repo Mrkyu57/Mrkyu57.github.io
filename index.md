@@ -16,6 +16,13 @@ title: "HOME"
       수학math
     </h2> 
   </a>
+
+  <a href="/physicsmainpost/" class="physics-click">
+    <h2>
+      물리physics
+    </h2> 
+  </a>
+
 </div>
 
 
@@ -37,13 +44,24 @@ title: "HOME"
   .menu_block h2 {
     display: inline-block;
     color: #ffffff;           
-    background-color: #5489ce;
     padding: 40px;
     border-radius: 10px;      
     text-decoration: none;
-    
+    width: 70px;
+  }
+
+  .math-click h2{
+    background-color: #5489ce;
     position: absolute;
     top: 180px;               
     left: 800px;
+    margin: 0;
+  }
+
+  .physics-click h2{
+    background-color: #8354ce;
+    position: absolute;
+    top: 180px;               
+    left: 1000px;
     margin: 0;
   }
