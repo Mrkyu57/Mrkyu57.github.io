@@ -31,6 +31,9 @@ permalink: /analysismainpost/
 ② 연속함수 - 
 ## chapter 3 : 미분
 
+  <a href="/analysis_1_1_/" class="logic-click">
+      논리학 logic 
+  </a>
 
 
 
