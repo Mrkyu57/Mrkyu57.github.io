@@ -2,3 +2,34 @@
 layout: default
 ---
 
+<!--포스트메인페이지/포스트의 기본양식-->
+
+<div class="post_hero_section">
+    <h1 class="post_title">
+        <span class="post_korean">{{ page.koreantitle }}</span>
+        <span class="post_english">{{ page.englishtitle }}</span> </h1>
+    <p class="post_info">{{ page.info }}</p>
+</div>
+
+<div class="post_content">
+    {{ content }}
+</div>
+
+<style>
+    .post_hero_section {
+        margin: -30px -20px 50px -20px;
+        padding: 80px 40px; 
+        color: white;
+        text-align: left;
+        background-color: {{ page.color }}; 
+    }
+    .post_title { margin: 0; line-height: 1.2; }
+    .post_korean { font-size: 3.5rem; font-weight: 800; letter-spacing: -2px; margin-right: 10px; }
+    .post_english { font-size: 1.5rem; font-weight: 300; opacity: 0.8; }
+    .post_info { margin-top: 15px; font-size: 1.1rem; opacity: 0.9; }
+    
+    .post_content {
+        padding: 0 40px;
+        line-height: 1.8;
+    }
+</style>
