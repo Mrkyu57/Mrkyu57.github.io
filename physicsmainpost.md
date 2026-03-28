@@ -35,11 +35,12 @@ permalink: /physicsmainpost/
     .physics_menu_block h2 {
         box-sizing: border-box;
         display: inline-block;
-        color: #ffffff;           
-        padding: 10px;
+        color: #ffffff;  
+        width: 80px;         
+        padding: 20px;
         border-radius: 10px;      
         text-decoration: none;
-        width: 80px;
+        
     }
 
     .classicaldynamics-click h2{

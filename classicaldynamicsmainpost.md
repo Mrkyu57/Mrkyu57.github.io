@@ -5,7 +5,7 @@ koreantitle: 고전역학
 englishtitle: classical dynamics
 info: 흠
 color: "#8354ce"
-permalink: /physicsmainpost/
+permalink: /classicaldynamicsmainpost/
 ---
 
 <div class="sub_category_box">
