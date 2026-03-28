@@ -4,11 +4,11 @@ title: "해석학"
 koreantitle: 해석학
 englishtitle: analysis
 info: 흠
-page.color: "#5489ce"
+color: "#5489ce"
 permalink: /analysismainpost/
 ---
 
-<div class="text1">
+<div class="sub_category_box">
     <h1>실해석학</h1>
 </div>
 
@@ -35,20 +35,13 @@ permalink: /analysismainpost/
 
 
 <style>
-
-    .text1{
-        display: inline-block;
-        font-size: 0.8rem;
-        color: #ffffff;           
-        padding: 10px;
-        border-radius: 10px;      
-        text-decoration: none;
-        width: 1200px;
+    .sub_category_box {
         background-color: #5489ce;
-        position: absolute;
-        top: 400px;               
-        left: 40px;
-        margin: 0;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 50px;
     }
 
 
