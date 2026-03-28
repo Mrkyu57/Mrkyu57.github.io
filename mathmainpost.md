@@ -36,7 +36,7 @@ permalink: /mathmainpost/
     .math_menu_block h2 {
         display: inline-block;
         color: #ffffff;           
-        padding: 40px;
+        padding: 30px;
         border-radius: 10px;      
         text-decoration: none;
         width: 80px;

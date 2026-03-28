@@ -35,7 +35,7 @@ permalink: /physicsmainpost/
     .physics_menu_block h2 {
         display: inline-block;
         color: #ffffff;           
-        padding: 40px;
+        padding: 30px;
         border-radius: 10px;      
         text-decoration: none;
         width: 80px;
@@ -49,14 +49,14 @@ permalink: /physicsmainpost/
         margin: 0;
     }
 
-    .algebra-click h2{
+    .fluidmechanics-click h2{
         background-color: #8354ce;
         position: absolute;
         top: 400px;               
         left: 400px;
         margin: 0;
     }
-    .analysis-click h2{
+    .thermodynamics-click h2{
         background-color: #8354ce;
         position: absolute;
         top: 400px;               
