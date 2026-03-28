@@ -4,7 +4,7 @@ title: "수학"
 koreantitle: 수학
 englishtitle: math
 info: 흠
-page.color: "#5489ce"
+color: "#5489ce"
 permalink: /mathmainpost/
 ---
 
