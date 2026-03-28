@@ -13,23 +13,15 @@ permalink: /analysismainpost/
 </div>
 
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 
 ## chapter 1 : 실수 
 
 ## chapter 2 : 극한
-① 실함수의 극한 - Limit of a function <br>
+<a href="/analysis_1_1_/" class="logic-click"> ① 실함수의 극한 - Limit of a function </a>
 ② 연속함수 - 
-## chapter 3 : 미분
 
-  <a href="/analysis_1_1_/" class="logic-click">
-      논리학 logic 
-  </a>
+## chapter 3 : 미분
 
 
 
