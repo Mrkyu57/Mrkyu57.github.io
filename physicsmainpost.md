@@ -33,6 +33,7 @@ permalink: /physicsmainpost/
 <style>
 
     .physics_menu_block h2 {
+        box-sizing: border-box;
         display: inline-block;
         color: #ffffff;           
         padding: 10px;
