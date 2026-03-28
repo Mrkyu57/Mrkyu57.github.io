@@ -4,7 +4,7 @@ title: "해석학"
 koreantitle: 해석학
 englishtitle: analysis
 info: 흠
-page.color: #5489ce
+page.color: "#5489ce"
 permalink: /analysismainpost/
 ---
 
