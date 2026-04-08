@@ -20,6 +20,7 @@ permalink: /classicaldynamicsmainpost/
 ② 연속함수 - 
 
 ## chapter 2 : 
+<a href="/classicaldynamics_2_1_/" class="classicaldynamics-click"> 서있는 물체 </a>
 
 ## chapter 3 : 
 

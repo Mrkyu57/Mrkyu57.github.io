@@ -8,7 +8,7 @@ color: "#8354ce"
 permalink: /classicaldynamics_1_1_/
 ---
 
-<canvas id="motionCanvas" width="600" height="200" style="border:1px solid #ddd; background: #f9f9f9;"></canvas>
+<canvas id="motionCanvas" width="600" height="200" style="border:1px solid #ddd; background: #f9f9f9; margin: 0 auto;"></canvas>
 <script>
   const canvas = document.getElementById('motionCanvas');
   const ctx = canvas.getContext('2d');
