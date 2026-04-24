@@ -5,7 +5,7 @@ koreantitle: 고전역학
 englishtitle: classical dynamics
 info: 흠
 color: "#8354ce"
-permalink: /classicaldynamicsmainpost/
+permalink: /physics_mainpost_classicaldynamics/
 ---
 
 <div class="sub_category_box">
@@ -16,13 +16,13 @@ permalink: /classicaldynamicsmainpost/
 
 
 ## chapter 1 :  
-<a href="/classicaldynamics_1_1_/" class="classicaldynamics-click"> ① 실함수의 극한 - Limit of a function </a>
-② 연속함수 - 
+<a href="/physics_classicaldynamics_1_1/" class="classicaldynamics-click"> ① 등속직선운동 </a>
 
 ## chapter 2 : 
-<a href="/classicaldynamics_2_1_/" class="classicaldynamics-click"> 서있는 물체 </a>
+<a href="/physics_classicaldynamics_2_1/" class="classicaldynamics-click"> 서있는 물체 </a>
 
 ## chapter 3 : 
+
 
 
 <style>

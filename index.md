@@ -11,13 +11,13 @@ title: "HOME"
 
 <div class="menu_block">  <!--선택메뉴-->
 
-  <a href="/mathmainpost/" class="math-click">
+  <a href="/math_mainpost/" class="math-click">
     <h2>
       수학math
     </h2> 
   </a>
 
-  <a href="/physicsmainpost/" class="physics-click">
+  <a href="/physics_mainpost/" class="physics-click">
     <h2>
       물리physics
     </h2> 

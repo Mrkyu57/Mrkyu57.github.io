@@ -5,30 +5,32 @@ koreantitle: 물리학
 englishtitle: physics
 info: 흠
 color: "#8354ce"
-permalink: /physicsmainpost/
+permalink: /physics_mainpost/
 ---
+
 
 <div class="physics_menu_block">  <!--선택메뉴-->
 
-  <a href="/classicaldynamicsmainpost/" class="classicaldynamics-click">
+  <a href="/physics_mainpost_classicaldynamics/" class="classicaldynamics-click">
     <h2>
       고전역학 classical dynamics
     </h2> 
   </a>
 
-  <a href="/fluidmechanicsmainpost/" class="fluidmechanics-click">
+  <a href="/physics_mainpost_fluidmechanics/" class="fluidmechanics-click">
     <h2>
       유체역학 fluid mechanics
     </h2> 
   </a>
 
-  <a href="/thermodynamics/" class="thermodynamics-click">
+  <a href="/physics_mainpost_thermodynamics/" class="thermodynamics-click">
     <h2>
       열역학 thermodynamics
     </h2> 
   </a>
 
 </div>
+
 
 <style>
 

@@ -5,31 +5,30 @@ koreantitle: 수학
 englishtitle: math
 info: 흠
 color: "#5489ce"
-permalink: /mathmainpost/
+permalink: /math_mainpost/
 ---
 
 <div class="math_menu_block">  <!--선택메뉴-->
 
-  <a href="/logicmainpost/" class="logic-click">
+  <a href="/math_mainpost_logic/" class="logic-click">
     <h2>
       논리학 logic
     </h2> 
   </a>
 
-  <a href="/algebramainpost/" class="algebra-click">
+  <a href="/math_mainpost_algebra/" class="algebra-click">
     <h2>
       대수학 algebra
     </h2> 
   </a>
 
-  <a href="/analysismainpost/" class="analysis-click">
+  <a href="/math_mainpost_analysis/" class="analysis-click">
     <h2>
       해석학 analysis
     </h2> 
   </a>
 
 </div>
-
 
 <style>
 
