@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>{{ page.title }}</title>
     </head>
@@ -13,9 +12,26 @@
 </html>
 
 <style>
-  nav a {
-    text-decoration: none; 
-    color: black;          
+  /* 1. 브라우저 기본 여백 초기화 (매우 중요) */
+  html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden; /* 가로 스크롤 완전 차단 */
   }
 
+  /* 2. 네비게이션 바를 화면 위로 띄우기 */
+  nav {
+      position: absolute; /* 공간을 차지하지 않고 위로 뜹니다 */
+      top: 20px;          /* 위에서 20px 띄움 */
+      left: 20px;         /* 왼쪽에서 20px 띄움 */
+      z-index: 100;       /* 히어로 섹션보다 항상 위에 보이도록 설정 */
+  }
+
+  nav a {
+      text-decoration: none; 
+      /* 배경이 유색(보라색 등)일 수 있으므로 하얀색이 더 잘 보일 수 있습니다. 필요시 변경하세요 */
+      color: white; 
+      font-size: 24px;         
+  }
 </style>

@@ -17,9 +17,12 @@ layout: default
 
 <style>
     .post_hero_section {
-
-        margin: -30px 0 50px 0; 
-        padding: 80px 40px; 
+        /* 이제 억지로 끌어올릴 필요가 없으므로 top margin을 0으로 줍니다 */
+        margin: 0 0 50px 0; 
+        
+        /* 네비게이션(nav)이 위에 떠 있으므로 텍스트가 겹치지 않게 top 패딩을 조금 더 줍니다 */
+        padding: 100px 40px 80px 40px; 
+        
         color: white;
         text-align: left;
         background-color: {{ page.color }}; 
@@ -28,9 +31,16 @@ layout: default
     }
     
     .post_title { margin: 0; line-height: 1.2; }
-    .post_korean { font-size: clamp(2rem, 5vw, 3.5rem);
-         font-weight: 800; letter-spacing: -2px; margin-right: 10px; }
+    
+    .post_korean { 
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        font-weight: 800; 
+        letter-spacing: -2px; 
+        margin-right: 10px; 
+    }
+    
     .post_english { font-size: 1.5rem; font-weight: 300; opacity: 0.8; }
+    
     .post_info { margin-top: 15px; font-size: 1.1rem; opacity: 0.9; }
     
     .post_content {
