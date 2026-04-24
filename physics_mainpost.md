@@ -25,7 +25,7 @@ permalink: /physics_mainpost/
 
   <a href="/physics_mainpost_thermodynamics/" class="thermodynamics-click">
     <h2>
-      열역학 thermodynamics
+      열역학 thermo dynamics
     </h2> 
   </a>
 
@@ -38,7 +38,7 @@ permalink: /physics_mainpost/
         box-sizing: border-box;
         display: inline-block;
         color: #ffffff;  
-        width: 80px;         
+        width: 160px;         
         padding: 20px;
         border-radius: 10px;      
         text-decoration: none;
