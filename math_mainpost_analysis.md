@@ -5,7 +5,7 @@ koreantitle: 해석학
 englishtitle: analysis
 info: 흠
 color: "#5489ce"
-permalink: /analysismainpost/
+permalink: /math_mainpost_analysis/
 ---
 
 <div class="sub_category_box">
@@ -18,11 +18,10 @@ permalink: /analysismainpost/
 ## chapter 1 : 실수 
 
 ## chapter 2 : 극한
-<a href="/analysis_1_1_/" class="logic-click"> ① 실함수의 극한 - Limit of a function </a>
+<a href="/math_analysis_1_1/" class="logic-click"> ① 실함수의 극한 - Limit of a function </a>
 ② 연속함수 - 
 
 ## chapter 3 : 미분
-
 
 
 

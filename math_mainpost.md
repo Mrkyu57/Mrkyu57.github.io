@@ -12,7 +12,9 @@ permalink: /math_mainpost/
 
   <a href="/math_mainpost_logic/" class="logic-click">
     <h2>
-      논리학 logic
+      논리학
+      <br>
+      logic
     </h2> 
   </a>
 
@@ -36,7 +38,7 @@ permalink: /math_mainpost/
         box-sizing: border-box;
         display: inline-block;
         color: #ffffff;  
-        width: 80px;         
+        width: 160px;         
         padding: 20px;
         border-radius: 10px;      
         text-decoration: none;
