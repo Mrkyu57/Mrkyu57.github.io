@@ -17,6 +17,12 @@ permalink: /math_mainpost/
       logic
     </h2> 
   </a>
+  
+  <a href="/math_mainpost_geometry/" class="geometry-click">
+    <h2>
+      기하학 geometry
+    </h2> 
+  </a>
 
   <a href="/math_mainpost_algebra/" class="algebra-click">
     <h2>
@@ -51,18 +57,26 @@ permalink: /math_mainpost/
         margin: 0;
     }
 
-    .algebra-click h2{
+    .geometry-click h2{
         background-color: #5489ce;
         position: absolute;
         top: 400px;               
         left: 400px;
         margin: 0;
     }
-    .analysis-click h2{
+
+    .algebra-click h2{
         background-color: #5489ce;
         position: absolute;
         top: 400px;               
         left: 600px;
+        margin: 0;
+    }
+    .analysis-click h2{
+        background-color: #5489ce;
+        position: absolute;
+        top: 400px;               
+        left: 800px;
         margin: 0;
     }
 </style>

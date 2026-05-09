@@ -1,29 +1,28 @@
 ---
 layout: post
-title: "해석학"
-koreantitle: 해석학
-englishtitle: analysis
+title: "기하학"
+koreantitle: 기하학
+englishtitle: geometry
 info: 흠
 color: "#5489ce"
-permalink: /math_mainpost_analysis/
+permalink: /math_mainpost_geometry/
 ---
 
 <div class="sub_category_box">
-    <h1>실해석학</h1>
+    <h1>논증 기하학 Synthetic geometry</h1>
 </div>
 
 
 
 
-## chapter 1 . 실수 
-
-## chapter 2 . 극한
+## chapter 1 . 평면기하학
 <a href="/math_analysis_1_1/" class="logic-click"> - 
-definition , 실함수의 극한  Limit of a function </a>
+proposition , 선분 위 정삼각형의 존재 </a>
 
-② 연속함수 - 
+## chapter 2 . 
 
-## chapter 3 . 미분
+
+## chapter 3 . 
 
 
 
@@ -40,4 +39,3 @@ definition , 실함수의 극한  Limit of a function </a>
 
 
 </style>
-
