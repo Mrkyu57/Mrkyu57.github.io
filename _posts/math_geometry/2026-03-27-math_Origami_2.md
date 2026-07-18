@@ -10,20 +10,21 @@ permalink: /physics_classicaldynamics_1_1/
 
 <!-- 모델링 공간 -->
 <div id="origami-axiom1-container" 
-style="
-margin: 20px 0; 
-text-align: center; 
-font-family: 'Times New Roman', serif; 
-background: #fff; 
-padding: 20px 0px 0px 0px; 
-border-radius: 12px; 
-box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
-position: relative;
+    style="
+    width: 900px; 
+    margin: 20px auto; 
+    background: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); 
+    border: 1px solid #eee;
+    overflow: hidden;
+    box-sizing: border-box; 
+    position: relative;
 ">
     <!-- 제목/설명 -->
-    <div style="margin-bottom: 15px;">
-        <h3 style="margin: 0; color: #333;">
-        Huzita–Hatori axioms I
+    <div style="margin-bottom: 15px; margin-top: 15px; display: flex; justify-content: center; align-items: center; gap: 15px; font-weight: bold; font-family: 'Times New Roman', serif;">
+        <h3 style="margin: 10; color: #333; ">
+        Huzita–Hatori axioms I :
         </h3>
         <p style="margin: 5px 0; color: #666; font-size: 0.95em;">
             서로 다른 두 점이 있을 때, 두 점을 통과하며 접는 방법은 유일하게 존재한다.
@@ -31,7 +32,7 @@ position: relative;
     </div>
     <!-- 폴드 슬라이더 -->
     <div style="margin-bottom: 15px; display: flex; justify-content: center; align-items: center; gap: 15px;">
-        <span style="font-weight: bold; font-size: 0.9em;">접기 (Fold)</span>
+        <span style="font-weight: bold; font-size: 0.9em;">접기  Fold</span>
         <input type="range" id="foldSlider" min="0" max="180" value="0" style="width: 200px; cursor: pointer; accent-color: #2563eb;">
         <span id="foldValue" style="font-weight: bold; color: #2563eb; width: 45px;">0°</span>
     </div>

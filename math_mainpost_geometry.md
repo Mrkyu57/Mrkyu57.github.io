@@ -9,13 +9,13 @@ permalink: /math_mainpost_geometry/
 ---
 
 <div class="sub_category_box">
-    <h1>논증 기하학 Synthetic geometry</h1>
+    <h1>유클리드 공리계 Synthetic geometry</h1>
 </div>
 
 
 
 
-## chapter 1 . 평면기하학
+## chapter 1 . 유클리드 기하학
 <a href="/math_analysis_1_1/" class="logic-click"> - 
 proposition , 선분 위 정삼각형의 존재 </a>
 
@@ -23,6 +23,12 @@ proposition , 선분 위 정삼각형의 존재 </a>
 
 
 ## chapter 3 . 
+
+
+<div class="sub_category_box">
+    <h1>힐베르트 공리계 Synthetic geometry</h1>
+</div>
+
 
 
 
